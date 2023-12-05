@@ -8,7 +8,7 @@ import "../Styles/ImageSlide.css"
 
 const ImageSlide = ()=>
 {
-    const numbers = Array.from({ length: 5 }, (_, index) => index + 1);
+    const numbers = Array.from({ length: 4 }, (_, index) => index + 1);
     return(
         <Carousel>
             {numbers.map( index=>{

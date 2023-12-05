@@ -2,8 +2,8 @@
 
 .card {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center;
+    align-items: center;
     width: 400px;
 }
 
@@ -26,14 +26,14 @@
 }
 
 .list-container {
-    text-align: center; /* Alinea horizontalmente el contenido */
+    text-align: center;
 }
 
 .centered-list {
-    list-style: none; /* Elimina los estilos de lista predeterminados */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
-    display: flex; /* Usa flexbox para alinear los elementos */
-    justify-content: center; /* Centra horizontalmente los elementos */
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -42,10 +42,10 @@
 }
 
 #myImage {
-    width: 200px; /* Tamaño inicial de la imagen */
-    transition: width 0.5s ease; /* Agrega una transición suave al cambio de tamaño */
+    width: 200px;
+    transition: width 0.5s ease;
 }
 
 #myImage.expanded {
-    width: 400px; /* Tamaño de la imagen al expandirse */
+    width: 400px;
 }
