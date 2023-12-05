@@ -6,7 +6,6 @@ import useEmptyCart from "../Components/useEmptyCart";
 const ShoppingCart = () => {
     const [items, setItems] = useState(Object?.keys(localStorage))
     const [hasChange, setHasChange] = useState(false)
-    const [cartItems, setCartItems] = useState({})
     const {itemChange} = useContext(ItemChangeContext)
     const { emptyCart, removeItemFromCart} = useEmptyCart()
 
@@ -14,11 +13,7 @@ const ShoppingCart = () => {
     let montante = 0
 
     useEffect(() => {
-        const updatedCartItems = {}
-        items.forEach(key => {
-            updatedCartItems[key] = JSON.parse(localStorage.getItem(key))
-        });
-        setCartItems(updatedCartItems)
+
     }, [items, hasChange,itemChange])
 
     const removeItem = (event) => {
