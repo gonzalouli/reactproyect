@@ -9,6 +9,8 @@ import Header from "../Components/Header";
 import Footer from "../Components/Footer";
 import ShoppingCart from "../Pages/ShoppingCart";
 import LittleShoppingCart from "../Components/LittleShoppingCart";
+import Opinion from "../Pages/Opinion";
+import DefaultPage from "../Pages/DefaultPage";
 
 const Router = ()=>
 {
@@ -18,11 +20,13 @@ const Router = ()=>
         <BrowserRouter>
             <div>
                 <Routes>
-                    <Route exact path="/" element={<Home/>}></Route>
-                    <Route exact path="/lures" element={<Lures/>}></Route>
-                    <Route exact path="/rods" element={<Rods/>}></Route>
-                    <Route exact path="/reels" element={<Reels/>}></Route>
-                    <Route exact path="/shoppingcart" element={<ShoppingCart/>}></Route>
+                    <Route  path="/" element={<Home/>}></Route>
+                    <Route  path="/lures" element={<Lures/>}></Route>
+                    <Route  path="/rods" element={<Rods/>}></Route>
+                    <Route  path="/reels" element={<Reels/>}></Route>
+                    <Route  path="/opinions" element={<Opinion/>}></Route>
+                    <Route  path="/shoppingcart" element={<ShoppingCart/>}></Route>
+                    <Route  path="*" element={<DefaultPage/>}></Route>
 
                 </Routes>
             </div>

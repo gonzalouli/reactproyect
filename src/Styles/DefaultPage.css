@@ -1,0 +1,12 @@
+.errorImage{
+    width: 50%;
+    border-radius: 150px;
+
+}
+
+.errorPage{
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

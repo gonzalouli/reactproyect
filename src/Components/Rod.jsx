@@ -1,5 +1,5 @@
 import React, {useContext, useState} from 'react';
-import "../Styles/Lure.css"
+import "../Styles/Article.css"
 import rodsDB from "../database/rodsDB";
 import Popup from "./Popup";
 import {ItemChangeContext} from "./ItemChangeContext";

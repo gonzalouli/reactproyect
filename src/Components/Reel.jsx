@@ -1,5 +1,5 @@
 import React, { useContext, useState} from 'react';
-import "../Styles/Lure.css"
+import "../Styles/Article.css"
 import Popup from "./Popup";
 import {ItemChangeContext} from "./ItemChangeContext";
 import useEmptyCart from "./useEmptyCart";

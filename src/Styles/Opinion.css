@@ -1,0 +1,28 @@
+.label{
+    padding: 3%;
+    min-width: 500px;
+    position: relative;
+    text-align: center;
+}
+
+
+.form
+{
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 3% 5%;
+}
+
+.textarea{
+    resize: none;
+}
+.checkbox-container {
+    display:flex;
+    align-items: center;
+}
+
+.radiosform{
+    background-color: cornflowerblue;
+    padding: 20px;
+    border-radius: 50px ;
+}

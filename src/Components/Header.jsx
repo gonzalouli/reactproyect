@@ -12,7 +12,7 @@ function Header() {
                         <Nav.Link className="section" href="/rods">Cañas</Nav.Link>
                         <Nav.Link className="section" href="/reels">Carretes</Nav.Link>
                         <Nav.Link className="section" href="/shoppingcart">Cesta</Nav.Link>
-                        <Nav.Link className="section" href="#devoluciones">Devoluciones</Nav.Link>
+                        <Nav.Link className="section" href="/opinions">Opiniones</Nav.Link>
                         <Form inline="True" className="d-flex align-items-center">
                             <FormControl type="text" placeholder="Buscar" className="busqueda" />
                             <Button variant="outline-light" className="busquedaButton">Buscar</Button>
