@@ -1,0 +1,11 @@
+.image{
+
+}
+
+.imageItem
+{
+    margin-top: 25px;
+    background-color: red;
+    max-width: 700px;
+    max-height: 900px;
+}

@@ -1,0 +1,24 @@
+.nav-link{
+    font-size: 25px !important;
+    margin: 24px;
+ }
+
+.homePage{
+    font-size: 25px !important;
+    padding-left: 5%;
+}
+
+.navbar{
+    margin-bottom: 25px;
+}
+
+.busqueda
+{
+    width: 150px !important;
+    height: 45px;
+
+}
+.busquedaButton
+{
+    margin: 4% !important;
+}

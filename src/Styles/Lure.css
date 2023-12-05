@@ -1,0 +1,48 @@
+
+
+.card {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 400px;
+}
+
+.card-text,.card-title{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.btn{
+    margin-bottom: 10px;
+}
+.card img {
+    max-width: 400px;
+    min-width: 400px;
+    height: auto;
+    display: block;
+    margin: 10px;
+}
+
+.list-container {
+    text-align: center; /* Alinea horizontalmente el contenido */
+}
+
+.centered-list {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado de la lista */
+    display: flex; /* Usa flexbox para alinear los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+
+.image-container {
+    text-align: center;
+}
+
+#myImage {
+    width: 200px; /* Tamaño inicial de la imagen */
+    transition: width 0.5s ease; /* Agrega una transición suave al cambio de tamaño */
+}
+
+#myImage.expanded {
+    width: 400px; /* Tamaño de la imagen al expandirse */
+}

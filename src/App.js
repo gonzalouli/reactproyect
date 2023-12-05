@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Router from "./router/Router";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {ItemChangeContext} from "./Components/ItemChangeContext";
+import {useEffect, useState} from "react";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [itemChangeContext, setItemChangeContext] = useState(false)
+
+    useEffect(() => {
+    }, [itemChangeContext]);
+
+    let itemHasChange = ()=>{
+        setItemChangeContext(true)
+        setTimeout(()=>{
+            setItemChangeContext(false)
+        }, 5000)
+    }
+
+    return (
+        <div className="App">
+            <ItemChangeContext.Provider value={{itemChangeContext,itemHasChange}}>
+                <Router/>
+            </ItemChangeContext.Provider>
+        </div>
+      );
 }
 
 export default App;
