@@ -1,6 +1,5 @@
 import React, {useContext, useState} from 'react';
 import "../Styles/Article.css"
-import luresDB from "../database/luresDB";
 import Popup from "./Popup";
 import {ItemChangeContext} from "./ItemChangeContext";
 import useEmptyCart from "./useEmptyCart";
