@@ -1,16 +1,20 @@
 .label{
-    padding: 3%;
     min-width: 500px;
     position: relative;
     text-align: center;
 }
 
 
+
 .form
 {
-    margin-left: 3%;
-    margin-right: 3%;
-    padding: 3% 5%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 50px;
+}
+
+.card{
+    margin-bottom: 15px;
 }
 
 .textarea{
@@ -21,8 +25,37 @@
     align-items: center;
 }
 
+.row-container{
+    background-color: lightgreen;
+}
+
+.row-container{
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+
+}
+
+.card{
+    border: solid 10px black !important;
+    border-radius: 20px !important;
+    max-width: 600px!important;
+    margin: 10px;
+}
+
+
+
 .radiosform{
     background-color: cornflowerblue;
     padding: 20px;
     border-radius: 50px ;
+}
+
+.response{
+
+    background-color: cornflowerblue;
+    border: 20px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    margin-bottom: 15px;
 }
