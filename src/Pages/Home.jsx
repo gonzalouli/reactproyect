@@ -1,6 +1,7 @@
 import React from 'react';
 
 import ImageSlide from '../Components/ImageSlide'
+import {Link} from "react-router-dom";
 function Home() {
     return (
         <div>

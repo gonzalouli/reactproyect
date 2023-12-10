@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Navbar, Nav, Form, FormControl, Button } from 'react-bootstrap';import "../Styles/header.css"
+import {Navbar, Nav, Form, FormControl, Button, NavLink} from 'react-bootstrap';import "../Styles/header.css"
 function Header() {
     return (
             <Navbar className="navbar" bg="primary" expand="lg" data-bs-theme="dark">
