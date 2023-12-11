@@ -6,7 +6,7 @@ import luresDB from "../database/luresDB";
 
 
 
-const useEmptyCart = ( )=>{
+const useCart = ( )=>{
     const {itemChange, itemHasChange} = useContext(ItemChangeContext)
     const [allProducts, setAllProducts] = useState([...reelsDB, ...rodsDB, ...luresDB])
 
@@ -54,4 +54,4 @@ const useEmptyCart = ( )=>{
 
 
 
-export default useEmptyCart
+export default useCart

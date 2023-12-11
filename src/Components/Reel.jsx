@@ -2,12 +2,12 @@ import React, { useContext, useState} from 'react';
 import "../Styles/Article.css"
 import Popup from "./Popup";
 import {ItemChangeContext} from "./ItemChangeContext";
-import useEmptyCart from "./useEmptyCart";
+import useCart from "./useCart";
 const Reel = ({ id, nombre,precio,tamanio,capacidad,peso }) => {
 
     const [showPopup, setShowPopup] = useState(false);
     const {itemChange, itemHasChange} = useContext(ItemChangeContext)
-    const { addItemCart } = useEmptyCart()
+    const { addItemCart } = useCart()
 
     const [buttonActive, setButtonActive] = useState(true);
 

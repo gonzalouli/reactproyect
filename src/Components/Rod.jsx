@@ -3,12 +3,12 @@ import "../Styles/Article.css"
 import rodsDB from "../database/rodsDB";
 import Popup from "./Popup";
 import {ItemChangeContext} from "./ItemChangeContext";
-import useEmptyCart from "./useEmptyCart";
+import useCart from "./useCart";
 
 const Rod = ({ id, precio, nombre, longitud, accion, peso, descripcion }) => {
     const [showPopup, setShowPopup] = useState(false);
     const {itemChange, itemHasChange} = useContext(ItemChangeContext)
-    const { addItemCart } = useEmptyCart()
+    const { addItemCart } = useCart()
     const [buttonActive, setButtonActive] = useState(true);
 
 

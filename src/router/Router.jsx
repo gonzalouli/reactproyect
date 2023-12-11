@@ -15,7 +15,7 @@ import Home from "../Pages/Home";
 
 
 
-const myRoutes = createBrowserRouter( [
+const myRoutes =  [
     {
         path: "/",
         element: <Home />,
@@ -44,14 +44,21 @@ const myRoutes = createBrowserRouter( [
         path: "*",
         element: <DefaultPage/>,
     }
-]);
+];
 
 const Router = ()=>
 {
     return(
         <Fragment>
-            <Header />
-                <RouterProvider router={myRoutes} />
+            <BrowserRouter>
+                <Header />
+                <Routes>
+                    {myRoutes.map(((rout)=>
+                    {
+                        return <Route path={rout.path} element={rout.element}></Route>
+                    }))}
+                </Routes>
+            </BrowserRouter>
             <LittleShoppingCart />
             <Footer />
         </Fragment>

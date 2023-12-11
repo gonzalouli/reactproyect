@@ -1,13 +1,13 @@
 import React, {Fragment, useContext, useEffect, useState} from 'react';
 import "../Styles/shoppingCart.css"
 import {ItemChangeContext} from "../Components/ItemChangeContext";
-import useEmptyCart from "../Components/useEmptyCart";
+import useCart from "../Components/useCart";
 
 const ShoppingCart = () => {
     const [items, setItems] = useState(Object?.keys(localStorage))
     const [hasChange, setHasChange] = useState(false)
     const {itemChange} = useContext(ItemChangeContext)
-    const { emptyCart, removeItemFromCart} = useEmptyCart()
+    const { emptyCart, removeItemFromCart} = useCart()
 
     let unidades = 0
     let montante = 0
